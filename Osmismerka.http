@@ -1,0 +1,6 @@
+@Osmismerka_HostAddress = http://localhost:5121
+
+GET {{Osmismerka_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
