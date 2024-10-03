@@ -1,0 +1,20 @@
+<div>
+  <h1>Osemsmerovka</h1>
+
+  <h3>Zadajte maticu (písmená oddelené medzerou, nový riadok znamená nový riadok v matici)</h3>
+  <textarea [(ngModel)]="matrixInput" rows="10" cols="30"></textarea>
+
+  <h3>Zadajte hľadané slová (oddelené medzerou)</h3>
+  <input type="text" [(ngModel)]="wordsInput">
+
+  <button (click)="search()">Hľadať</button>
+
+  <h3>Výsledky:</h3>
+  <ul>
+    <li *ngFor="let result of results">{{ result }}</li>
+  </ul>
+
+  <h3>Tajnička:</h3>
+  <p>{{ tajenka }}</p>
+</div>
+
